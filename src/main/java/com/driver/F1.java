@@ -28,7 +28,7 @@ public class F1 extends Car {
         if(newSpeed == 0) {
             //Stop the car, set gear as 1
             stop();
-            changeSpeed(0,getCurrentDirection());
+            //changeSpeed(0,getCurrentDirection());
             changeGear(1);
         }
         //for all other cases, change the gear accordingly
@@ -50,24 +50,7 @@ public class F1 extends Car {
             }
         }
 
-    @Override
-    public String getName() {
-        return this.name;
+
     }
 
-    @Override
-    public boolean isManual() {
-        return this.isManual;
-    }
-
-    @Override
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public void setManual(boolean manual) {
-        isManual = manual;
-    }
-}
 
