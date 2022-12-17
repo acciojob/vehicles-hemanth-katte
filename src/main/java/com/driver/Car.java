@@ -43,4 +43,36 @@ public class Car extends Vehicle {
         return super.getCurrentDirection();
     }
 
+    public int getWheels(){
+        return this.wheels;
+    }
+
+    @Override
+    public String getName() {
+        return this.name;
+    }
+
+    public String getType() {
+        return this.type;
+    }
+
+    public int getDoors() {
+        return this.doors;
+    }
+
+    public int getGears() {
+        return this.gears;
+    }
+
+    public boolean isManual() {
+        return this.isManual;
+    }
+
+    public int getCurrentGear() {
+        return this.currentGear;
+    }
+
+    public int getSeats() {
+        return this.seats;
+    }
 }
