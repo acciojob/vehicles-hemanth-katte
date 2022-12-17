@@ -10,8 +10,6 @@ public class F1 extends Car {
     public F1(String name, boolean isManual) {
        super(name,4,2,6,isManual, "F1",1);
         //Use arbitrary values for parameters which are not mentioned
-        //this.name = name;
-        //this.isManual = isManual;
     }
 
     public void accelerate(int rate){
@@ -60,6 +58,16 @@ public class F1 extends Car {
     @Override
     public boolean isManual() {
         return this.isManual;
+    }
+
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public void setManual(boolean manual) {
+        isManual = manual;
     }
 }
 
